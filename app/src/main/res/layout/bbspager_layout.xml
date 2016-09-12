@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/bbs_radioGroup"
+        android:layout_width="250dp"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/bbs_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bbs_radiobutton"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/bbs_icon_0"
+            android:text="全部评论"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/bbs2_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bbs_radiobutton"
+            android:button="@null"
+            android:drawableLeft="@drawable/bbs_icon_1"
+            android:text="题材作品区        "
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/bbs3_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bbs_radiobutton"
+            android:button="@null"
+            android:drawableLeft="@drawable/bbs_icon_2"
+            android:text="全部摄影区        "
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/bbs4_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bbs_radiobutton"
+            android:button="@null"
+            android:drawableLeft="@drawable/bbs_icon_3"
+            android:text="二手交易区        "
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/bbs5_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bbs_radiobutton"
+            android:button="@null"
+            android:drawableLeft="@drawable/bbs_icon_4"
+            android:text="全国分站区        "
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/bbs6_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bbs_radiobutton"
+            android:button="@null"
+            android:drawableLeft="@drawable/bbs_icon_5"
+            android:text="题材讨论区        "
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/bbs7_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bbs_radiobutton"
+            android:button="@null"
+            android:drawableLeft="@drawable/bbs_icon_6"
+            android:text="论坛服务区        "
+            android:textSize="30dp" />
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/bbs_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

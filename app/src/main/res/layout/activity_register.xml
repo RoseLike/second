@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.hcc.mysecondproject.RegisterActivity">
+    <LinearLayout
+        android:id="@+id/registerlinearId1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="用户名"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/reguserId"
+            android:hint="4-14位字符,无特殊符号"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:background="@android:drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/registerlinearId2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/registerlinearId1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="密码    "
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/regpasswordId"
+            android:background="@android:drawable/edit_text"
+            android:hint="6-16位数字或字母"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/registerlinearId3"
+        android:layout_width="match_parent"
+        android:layout_below="@id/registerlinearId2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="邮箱    "
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/regemallId"
+            android:background="@android:drawable/edit_text"
+            android:hint="邮箱用于找回密码"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@id/registerlinearId3"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/submitId"
+            android:text="提交"
+            android:gravity="center"
+            android:background="@drawable/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

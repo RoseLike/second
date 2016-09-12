@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.example.hcc.mysecondproject.LoginActivity">
+    <LinearLayout
+        android:id="@+id/loginlinearId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="用户名"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/userId"
+            android:inputType="text"
+            android:hint="4-14位字符"
+            android:imeOptions="actionNext"
+           android:background="@android:drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/loginlinearId2"
+    android:layout_width="match_parent"
+    android:layout_below="@id/loginlinearId"
+
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="密码   "
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <EditText
+        android:id="@+id/passwordId"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:hint="6-16位数字或字母"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/regiserId"
+        android:text="注册"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/loginlinearId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/loginId"
+        android:text="登录"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/regiserId"
+        android:layout_below="@+id/loginlinearId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
